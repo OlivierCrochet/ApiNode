@@ -15,11 +15,11 @@ const newUser = new User( {
 });
 
 app.post('/', (req, res) => {
-    newUser.save().then((resp) => {
-        console.log('Saved : \n' + JSON.stringify(resp, undefined, 2));
-    }).catch((err) => {
-        console.log(err);
-    });
+    // newUser.save().then((resp) => {
+    //     console.log('Saved : \n' + JSON.stringify(resp, undefined, 2));
+    // }).catch((err) => {
+    //     console.log(err);
+    // });
 });
 
 app.listen(3000, () => {
